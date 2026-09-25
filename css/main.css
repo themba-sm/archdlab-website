@@ -89,6 +89,12 @@ a { color: inherit; }
 .btn-ghost:hover { background: var(--ink); color: var(--paper); }
 .btn-ghost-dark { color: #EDE9E0; border-color: #8A867B; }
 .btn-ghost-dark:hover { background: #EDE9E0; color: var(--ink); border-color: #EDE9E0; }
+.btn-accent-red {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+}
+.btn-accent-red:hover { background: #8F1E17; border-color: #8F1E17; color: #fff; }
 .btn-sm { padding: 9px 18px; min-height: 40px; font-size: 13px; }
 .btn-lg { padding: 17px 34px; font-size: 15px; }
 .btn-block { display: block; width: 100%; }
@@ -199,13 +205,27 @@ a { color: inherit; }
   position: relative;
   padding: 44px 0 56px;
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(90deg, rgba(224,90,18,0.045) 0%, transparent 30%),
-    var(--paper);
+  background-image:
+    linear-gradient(90deg, rgba(22,21,17,0.88) 0%, rgba(22,21,17,0.72) 38%, rgba(22,21,17,0.32) 68%, rgba(22,21,17,0.12) 100%),
+    linear-gradient(0deg, rgba(22,21,17,0.55) 0%, transparent 45%),
+    url("../assets/img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center 42%;
+  background-repeat: no-repeat;
+  color: var(--paper);
 }
+.hero .kicker { color: #D9D4C6; }
+.hero h1 { color: var(--paper); }
+.hero h1 em { color: var(--orange); }
+.hero .hero-sub { color: #EDE9DE; }
+.hero .hero-sub strong { color: var(--paper); }
+.hero .hero-meta { color: #C9C4B6; }
+.hero .hero-meta span { border-top-color: rgba(255,255,255,0.25); }
+.hero .btn-ghost { color: var(--paper); border-color: rgba(246,243,237,0.6); }
+.hero .btn-ghost:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
 .hero-grid-line {
   position: absolute; top: 0; bottom: 0; left: 50%;
-  width: 1px; background: var(--line);
+  width: 1px; background: rgba(246,243,237,0.18);
   opacity: 0.6;
 }
 .hero-inner { position: relative; }
@@ -253,7 +273,7 @@ h1 em {
 .hero-photo {
   width: 100%;
   height: 300px;              /* explicit heights per breakpoint — no aspect-ratio conflict */
-  background-image: url("../img/hero.jpg");
+  background-image: url("../assets/img/hero.jpg");
   background-size: cover;
   background-position: center 60%;
   border-radius: var(--radius);
@@ -465,7 +485,7 @@ h1 em {
   width: 100%;
   height: 260px;
   aspect-ratio: 21 / 9;
-  background-image: url("../img/philosophy.jpg");
+  background-image: url("../assets/img/philosophy.jpg");
   background-size: cover;
   background-position: center 40%;
   position: relative;
@@ -707,7 +727,6 @@ h1 em {
 
 /* ============ TABLET ≥ 640px ============ */
 @media (min-width: 640px) {
-  .hero-photo { height: 380px; }
   .phil-band { height: 340px; }
   .principles { grid-template-columns: repeat(2, 1fr); }
   .gal { grid-template-columns: repeat(2, 1fr); }
@@ -724,11 +743,7 @@ h1 em {
   .menu-btn { display: none; }
 
   .hero { padding: 72px 0 88px; }
-  .hero-inner {
-    display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px;
-    align-items: center;
-  }
-  .hero-photo { height: 470px; }
+  .hero-inner { max-width: 720px; }
   .strip-inner { grid-template-columns: repeat(3, auto) 1fr; gap: 40px; align-items: baseline; padding: 30px 0; }
   .strip-copy { border-top: none; border-left: 1px solid var(--line); padding: 0 0 0 32px; }
   .section { padding: 88px 0; }
