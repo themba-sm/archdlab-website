@@ -22,27 +22,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/main.css" />
 <script>
-/* Always land on top of the site on a fresh load — never mid-page, even if the
-   URL carries a leftover #hash from a shared link. In-page nav clicks (after
-   load) still scroll to sections normally. */
+/* Always land at the very top of the site on EVERY load and refresh — even
+   when the link carried a section hash or the browser wants to restore the
+   previous scroll position. Stops the instant the user scrolls or presses a
+   key, so it never fights normal browsing. */
 (function () {
   try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
-  if (window.location.hash) {
-    var de = document.documentElement;
-    try { de.style.scrollBehavior = "auto"; } catch (e) {}   /* cancel smooth fragment scroll */
+  var de = document.documentElement;
+  var wasHash = !!window.location.hash;
+  if (wasHash) {
+    try { de.style.scrollBehavior = "auto"; } catch (e) {}
     try { history.replaceState(null, "", window.location.pathname + window.location.search); } catch (e) {}
-    var loaded = false, start = Date.now();
-    var t = setInterval(function () {
-      window.scrollTo(0, 0);
-      /* keep holding top until the page has fully loaded (browsers do the
-         fragment jump around/after load on slow pages) — max 5s safety cap */
-      if ((loaded && Date.now() > loaded + 400) || Date.now() - start > 5000) {
-        clearInterval(t);
-        try { de.style.scrollBehavior = ""; } catch (e) {}    /* restore smooth in-page nav */
-      }
-    }, 30);
-    window.addEventListener("load", function () { loaded = Date.now(); window.scrollTo(0, 0); });
   }
+  var loaded = 0, start = Date.now(), t;
+  var finish = function () {
+    clearInterval(t);
+    if (wasHash) { try { de.style.scrollBehavior = ""; } catch (e) {} }
+  };
+  t = setInterval(function () {
+    window.scrollTo(0, 0);
+    if ((loaded && Date.now() > loaded + 600) || Date.now() - start > 6000) finish();
+  }, 30);
+  window.addEventListener("load", function () { loaded = Date.now(); window.scrollTo(0, 0); });
+  window.addEventListener("touchstart", finish, { passive: true });
+  window.addEventListener("wheel", finish, { passive: true });
+  window.addEventListener("keydown", finish);
 })();
 </script>
 <script type="application/ld+json">
