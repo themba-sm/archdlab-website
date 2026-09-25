@@ -27,13 +27,16 @@
    load) still scroll to sections normally. */
 (function () {
   try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
-  var hadHash = !!window.location.hash;
-  if (hadHash) {
-    window.scrollTo(0, 0);
+  if (window.location.hash) {
+    var de = document.documentElement;
+    try { de.style.scrollBehavior = "auto"; } catch (e) {}   /* cancel smooth fragment scroll */
     try { history.replaceState(null, "", window.location.pathname + window.location.search); } catch (e) {}
-    // some mobile browsers re-apply the hash scroll after fonts/images finish loading — guard those too
-    document.addEventListener("DOMContentLoaded", function () { window.scrollTo(0, 0); });
-    window.addEventListener("load", function () { window.scrollTo(0, 0); });
+    var t = setInterval(function () { window.scrollTo(0, 0); }, 30);
+    setTimeout(function () {
+      clearInterval(t);
+      window.scrollTo(0, 0);
+      try { de.style.scrollBehavior = ""; } catch (e) {}     /* restore smooth in-page nav */
+    }, 1200);
   }
 })();
 </script>
