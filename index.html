@@ -31,12 +31,17 @@
     var de = document.documentElement;
     try { de.style.scrollBehavior = "auto"; } catch (e) {}   /* cancel smooth fragment scroll */
     try { history.replaceState(null, "", window.location.pathname + window.location.search); } catch (e) {}
-    var t = setInterval(function () { window.scrollTo(0, 0); }, 30);
-    setTimeout(function () {
-      clearInterval(t);
+    var loaded = false, start = Date.now();
+    var t = setInterval(function () {
       window.scrollTo(0, 0);
-      try { de.style.scrollBehavior = ""; } catch (e) {}     /* restore smooth in-page nav */
-    }, 1200);
+      /* keep holding top until the page has fully loaded (browsers do the
+         fragment jump around/after load on slow pages) — max 5s safety cap */
+      if ((loaded && Date.now() > loaded + 400) || Date.now() - start > 5000) {
+        clearInterval(t);
+        try { de.style.scrollBehavior = ""; } catch (e) {}    /* restore smooth in-page nav */
+      }
+    }, 30);
+    window.addEventListener("load", function () { loaded = Date.now(); window.scrollTo(0, 0); });
   }
 })();
 </script>
