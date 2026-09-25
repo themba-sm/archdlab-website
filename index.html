@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Architectural Design Lab | Architecture, Interior Design &amp; Construction</title>
+<meta name="description" content="Architectural Design Lab is a multi-disciplinary practice in Boksburg, Johannesburg East, offering architecture, interior design and construction consultancy services." />
+<meta name="theme-color" content="#161511" />
+<link rel="canonical" href="https://archdlab-website.vercel.app/" />
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Architectural Design Lab | Architecture, Interior Design &amp; Construction" />
+<meta property="og:description" content="A multi-disciplinary practice in Boksburg, Johannesburg East, bringing architecture, interior design and construction together." />
+<meta property="og:url" content="https://archdlab-website.vercel.app/" />
+<meta property="og:image" content="https://archdlab-website.vercel.app/assets/img/hero.jpg" />
+<meta property="og:locale" content="en_ZA" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23161511'/%3E%3Cpath d='M32 12 L50 52 H14 Z' fill='none' stroke='%23E05A12' stroke-width='4'/%3E%3Cpath d='M32 30 L41 52 H23 Z' fill='%23E05A12'/%3E%3C/svg%3E" />
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/main.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Architectural Design Lab",
+  "alternateName": "ARCHD LAB",
+  "description": "A young multi-disciplinary practice offering consultancy services in architecture, interior design and construction.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office 7, Van Dyk Secured Office Park",
+    "addressLocality": "Boksburg",
+    "addressRegion": "Gauteng",
+    "addressCountry": "ZA"
+  },
+  "telephone": "+27 11 037 4433",
+  "email": "info@archdlab.co.za",
+  "url": "https://archdlab-website.vercel.app/"
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head" id="siteHead">
+  <div class="head-inner">
+    <a href="#top" class="wordmark" aria-label="ARCHD LAB — back to top">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="wordmark-text">ARCHD<em>LAB</em></span>
+    </a>
+    <nav class="head-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="head-actions">
+      <a class="btn btn-primary btn-sm" href="#enquiry">Start an Enquiry</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile navigation overlay -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <nav aria-label="Mobile primary">
+    <a href="#about"><span class="mn-num">01</span>About</a>
+    <a href="#services"><span class="mn-num">02</span>Services</a>
+    <a href="#expertise"><span class="mn-num">03</span>Expertise</a>
+    <a href="#philosophy"><span class="mn-num">05</span>Philosophy</a>
+    <a href="#contact"><span class="mn-num">09</span>Contact</a>
+    <a class="btn btn-primary btn-block" href="#enquiry">Start an Enquiry</a>
+  </nav>
+  <div class="mn-foot">
+    <a href="tel:+27796188759">079 618 8759</a>
+    <a href="mailto:info@archdlab.co.za">info@archdlab.co.za</a>
+    <a class="mn-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">WhatsApp us</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-grid-line" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="kicker"><span class="tick" aria-hidden="true"></span>ARCHITECTURAL DESIGN LAB — BOKSBURG / JOHANNESBURG EAST</p>
+      <h1>Designing spaces.<br />Shaping <em>what&rsquo;s next.</em></h1>
+      <p class="hero-sub">A young multi-disciplinary practice bringing <strong>architecture</strong>, <strong>interior design</strong> and <strong>construction</strong> together around how you want to build — with developers, corporations, private businesses and individuals.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#enquiry">Start an Enquiry</a>
+        <a class="btn btn-ghost" href="#services">Explore Our Services</a>
+      </div>
+      <p class="hero-meta" aria-hidden="true">
+        <span>MULTI-DISCIPLINARY PRACTICE</span>
+        <span>ARCH + INT + CON</span>
+        <span>JOHANNESBURG EAST, GAUTENG</span>
+      </p>
+    </div>
+    <figure class="hero-fig">
+      <div class="hero-photo" role="img" aria-label="Contemporary architectural facade in warm evening light — architectural reference imagery."></div>
+      <figcaption><span class="fig-tag">FIG. 00</span>Architectural reference — visual direction</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ TRUST / POSITIONING STRIP ============ -->
+<section class="strip" aria-label="Disciplines">
+  <div class="container strip-inner">
+    <div class="strip-col"><span class="strip-num">D1</span><h2 class="strip-word">Architecture</h2></div>
+    <div class="strip-col"><span class="strip-num">D2</span><h2 class="strip-word">Interior Design</h2></div>
+    <div class="strip-col"><span class="strip-num">D3</span><h2 class="strip-word">Construction</h2></div>
+    <p class="strip-copy">One practice, three disciplines. <strong>ARCHD LAB</strong> combines them into an interdisciplinary approach intended to improve the quality and coherence of the end product — independently or in combination, according to your requirements.</p>
+  </div>
+</section>
+
+<!-- ============ 01 ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label"><i class="sec-num">01</i>ABOUT THE PRACTICE</span>
+      <h2 class="sec-title">A multi-disciplinary approach to design.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="lead">Architectural Design Lab is a young multi-disciplinary practice offering consultancy services in architecture, interior design and construction.</p>
+        <p>Each discipline can be engaged on its own, or combined into a single, coordinated service — configured around what your project actually needs, not a fixed way of working.</p>
+        <p>The practice has the capacity, experience and expertise to take on large projects, while remaining open to small and medium-scale assignments.</p>
+        <div class="about-clients">
+          <h3 class="mini-label">WHO WE WORK WITH</h3>
+          <ul>
+            <li>Developers</li>
+            <li>Corporations</li>
+            <li>Private businesses</li>
+            <li>Individuals</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="about-fig">
+        <img src="assets/img/about.jpg" alt="Two architects reviewing plans across a drafting table in a studio — visual reference." width="1024" height="1024" loading="lazy" />
+        <figcaption><span class="fig-tag">FIG. 01</span>Studio practice — visual reference</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 SERVICES ============ -->
+<section class="section section-tint" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label"><i class="sec-num">02</i>SERVICES</span>
+      <h2 class="sec-title">From concept to delivery.</h2>
+      <p class="sec-sub">Eight services that can be engaged independently or combined according to client requirements.</p>
+    </div>
+
+    <div class="svc-list" id="svcList">
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p1" id="svc-b1">
+          <span class="svc-num">01</span>
+          <span class="svc-name">Project Appraisal</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p1" role="region" aria-labelledby="svc-b1">
+          <div class="svc-body">
+            <p>An early assessment of your site, brief and requirements — establishing what is possible and sensible before design work begins.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20a%20project%20appraisal." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p2" id="svc-b2">
+          <span class="svc-num">02</span>
+          <span class="svc-name">Concept Designs</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p2" role="region" aria-labelledby="svc-b2">
+          <div class="svc-body">
+            <p>Early design thinking that translates your brief into a clear architectural direction for the project.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20a%20concept%20design." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p3" id="svc-b3">
+          <span class="svc-num">03</span>
+          <span class="svc-name">Design Incorporation &amp; Development</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p3" role="region" aria-labelledby="svc-b3">
+          <div class="svc-body">
+            <p>Developing the approved concept into a coordinated, resolved design that incorporates your requirements and feedback.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20design%20development." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p4" id="svc-b4">
+          <span class="svc-num">04</span>
+          <span class="svc-name">Detailing &amp; Documentation</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p4" role="region" aria-labelledby="svc-b4">
+          <div class="svc-body">
+            <p>Producing the detailed drawings and documentation that carry the design into buildable, technically resolved form.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20detailing%20and%20documentation." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p5" id="svc-b5">
+          <span class="svc-num">05</span>
+          <span class="svc-name">Tender Process &amp; Administration</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p5" role="region" aria-labelledby="svc-b5">
+          <div class="svc-body">
+            <p>Managing the tender process so that pricing is comparable, transparent and aligned with the project documentation.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20the%20tender%20process." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p6" id="svc-b6">
+          <span class="svc-num">06</span>
+          <span class="svc-name">Construction Administration &amp; Supervision</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p6" role="region" aria-labelledby="svc-b6">
+          <div class="svc-body">
+            <p>Administering the construction stage and supervising the works so the built result matches the documented design.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20construction%20administration%20and%20supervision." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p7" id="svc-b7">
+          <span class="svc-num">07</span>
+          <span class="svc-name">Evaluation</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p7" role="region" aria-labelledby="svc-b7">
+          <div class="svc-body">
+            <p>Reviewing the completed project against the brief, budget and programme — so every project informs the next.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20project%20evaluation." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+      <article class="svc">
+        <button class="svc-head" aria-expanded="false" aria-controls="svc-p8" id="svc-b8">
+          <span class="svc-num">08</span>
+          <span class="svc-name">Landscaping</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="svc-p8" role="region" aria-labelledby="svc-b8">
+          <div class="svc-body">
+            <p>Designing the outdoor environment so the building, its landscape and its context work as one.</p>
+            <a class="svc-wa" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20enquire%20about%20landscaping." target="_blank" rel="noopener">Discuss this service on WhatsApp</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="section-cta">
+      <p>Not sure which service you need? That&rsquo;s exactly what the enquiry conversation is for.</p>
+      <a class="btn btn-primary" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20would%20like%20to%20discuss%20my%20project." target="_blank" rel="noopener">Discuss Your Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 EXPERTISE / BUILDING TYPES ============ -->
+<section class="section" id="expertise">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label"><i class="sec-num">03</i>EXPERTISE</span>
+      <h2 class="sec-title">Experience across building types.</h2>
+      <p class="sec-sub">An index of the building types the practice has worked with across its disciplines.</p>
+    </div>
+    <ul class="sector-index">
+      <li><a href="#enquiry"><span class="sx-num">01</span><span class="sx-name">Residential Buildings</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">02</span><span class="sx-name">Commercial Buildings</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">03</span><span class="sx-name">Office Blocks</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">04</span><span class="sx-name">Office Space Planning</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">05</span><span class="sx-name">Institutional Buildings</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">06</span><span class="sx-name">Restaurants</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">07</span><span class="sx-name">Retail Buildings</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">08</span><span class="sx-name">Hotels, Resorts &amp; Lodges</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">09</span><span class="sx-name">Industrial Buildings</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">10</span><span class="sx-name">Religious Buildings</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+      <li><a href="#enquiry"><span class="sx-num">11</span><span class="sx-name">Town Houses &amp; Clusters</span><span class="sx-arrow" aria-hidden="true">&#8594;</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 04 PROJECT JOURNEY ============ -->
+<section class="section section-dark" id="journey">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label sec-label-dark"><i class="sec-num">04</i>PROJECT JOURNEY</span>
+      <h2 class="sec-title sec-title-dark">How the services connect.</h2>
+      <p class="sec-sub sec-sub-dark">A representative sequence — how ARCHD LAB&rsquo;s services can connect across a project. Every engagement is configured around your requirements.</p>
+    </div>
+    <ol class="journey">
+      <li class="j-step"><span class="j-num">01</span><h3>Project Appraisal</h3><p>Establish the brief, the site and what is possible.</p></li>
+      <li class="j-step"><span class="j-num">02</span><h3>Concept Design</h3><p>Translate the brief into a clear direction.</p></li>
+      <li class="j-step"><span class="j-num">03</span><h3>Design Development</h3><p>Incorporate requirements and resolve the design.</p></li>
+      <li class="j-step"><span class="j-num">04</span><h3>Detailing &amp; Documentation</h3><p>Capture the design in buildable, technical detail.</p></li>
+      <li class="j-step"><span class="j-num">05</span><h3>Tender Process</h3><p>Obtain comparable, transparent pricing.</p></li>
+      <li class="j-step"><span class="j-num">06</span><h3>Construction Administration &amp; Supervision</h3><p>Administer the build and supervise the works.</p></li>
+      <li class="j-step"><span class="j-num">07</span><h3>Evaluation</h3><p>Review the result against brief, budget and programme.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 05 PHILOSOPHY ============ -->
+<section class="section philosophy" id="philosophy">
+  <div class="phil-band" role="img" aria-label="Warm light falling through a skylight into a tall atrium — architectural reference imagery."></div>
+  <div class="container phil-content">
+    <span class="sec-label"><i class="sec-num">05</i>PHILOSOPHY</span>
+    <h2 class="phil-title">We make life <em>art</em> of design.</h2>
+    <div class="phil-copy">
+      <p>Architecture is more than meeting business objectives. It shapes how people experience the environments they live, work and gather in.</p>
+      <p>The practice sees architecture as physical and intellectual — but also emotional: creating connections between people and their changing environments. Environments that welcome travellers, invite shoppers and support learners.</p>
+      <p class="phil-core">The goal, always: <strong>enhance life by design.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 OBJECTIVES ============ -->
+<section class="section" id="objectives">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label"><i class="sec-num">06</i>OBJECTIVES</span>
+      <h2 class="sec-title">Design with purpose.</h2>
+      <p class="sec-sub">The practice&rsquo;s stated objectives, kept plainly.</p>
+    </div>
+    <ul class="principles">
+      <li><span class="pr-num">01</span><h3>Integrated thinking</h3><p>Develop concepts through an integrated approach.</p></li>
+      <li><span class="pr-num">02</span><h3>Environmental consideration</h3><p>Address environmental needs in every brief.</p></li>
+      <li><span class="pr-num">03</span><h3>Human needs</h3><p>Design around the people who use the space.</p></li>
+      <li><span class="pr-num">04</span><h3>Economic &amp; social awareness</h3><p>Respond to economic and social needs, and support equitable business opportunity.</p></li>
+      <li><span class="pr-num">05</span><h3>Budget awareness</h3><p>Adhere to the project budget.</p></li>
+      <li><span class="pr-num">06</span><h3>Programme awareness</h3><p>Adhere to the project programme and timelines.</p></li>
+      <li><span class="pr-num">07</span><h3>Employment creation</h3><p>Aim for maximum employment creation.</p></li>
+      <li><span class="pr-num">08</span><h3>Professional development</h3><p>Provide in-service training opportunities to new professionals.</p></li>
+      <li><span class="pr-num">09</span><h3>Sustainability in practice</h3><p>Teach sustainability through practical experience.</p></li>
+      <li><span class="pr-num">10</span><h3>Empowerment</h3><p>Support empowerment in the interest of all stakeholders, not one.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 07 SKILLS & TECHNOLOGY ============ -->
+<section class="section section-tint skills" id="skills">
+  <div class="container">
+    <span class="sec-label"><i class="sec-num">07</i>SKILLS &amp; TECHNOLOGY</span>
+    <p class="skills-lead">Software the practice has worked with across its projects:</p>
+    <ul class="tech-list">
+      <li>AutoCAD</li>
+      <li>DataCAD</li>
+      <li>3D TrueSpace</li>
+      <li>Photoshop</li>
+      <li>CorelDRAW</li>
+      <li>ArchiCAD</li>
+      <li>Microsoft Project</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 08 GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label"><i class="sec-num">08</i>VISUAL EXPLORATION</span>
+      <h2 class="sec-title">The language of space.</h2>
+      <p class="sec-sub">Reference imagery shown as visual direction for the environments the practice works with — not documented ARCHD LAB projects. This section is structured for project photography as it becomes available.</p>
+    </div>
+    <div class="gal">
+      <figure class="gal-item gal-w"><img src="assets/img/gal-residential.jpg" alt="Minimalist contemporary house with timber volumes and indigenous planting — reference imagery." width="1024" height="1024" loading="lazy" /><figcaption><span class="fig-tag">REF. 01</span>Residential</figcaption></figure>
+      <figure class="gal-item"><img src="assets/img/gal-commercial.jpg" alt="Contemporary mixed-use commercial building facade — reference imagery." width="1024" height="1024" loading="lazy" /><figcaption><span class="fig-tag">REF. 02</span>Commercial</figcaption></figure>
+      <figure class="gal-item"><img src="assets/img/gal-interior.jpg" alt="Warm timber restaurant interior with brass pendant lighting — reference imagery." width="1024" height="1024" loading="lazy" /><figcaption><span class="fig-tag">REF. 03</span>Interiors</figcaption></figure>
+      <figure class="gal-item"><img src="assets/img/gal-detail.jpg" alt="Close-up of a timber ceiling meeting a concrete beam with a steel bracket — reference imagery." width="1024" height="1024" loading="lazy" /><figcaption><span class="fig-tag">REF. 04</span>Detailing &amp; construction</figcaption></figure>
+      <figure class="gal-item gal-w"><img src="assets/img/gal-urban.jpg" alt="City buildings receding into warm dusk haze — reference imagery." width="1024" height="1024" loading="lazy" /><figcaption><span class="fig-tag">REF. 05</span>Urban context</figcaption></figure>
+      <figure class="gal-item"><img src="assets/img/gal-hospitality.jpg" alt="Low stone and timber lodge pavilion beside a reflective water feature at dusk — reference imagery." width="1024" height="1024" loading="lazy" /><figcaption><span class="fig-tag">REF. 06</span>Hospitality</figcaption></figure>
+      <figure class="gal-item"><img src="assets/img/gal-construction.jpg" alt="Building frame under construction with a tower crane against a warm dusk sky — reference imagery." width="1024" height="1024" loading="lazy" /><figcaption><span class="fig-tag">REF. 07</span>Construction</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 ENQUIRY + CONTACT ============ -->
+<section class="section section-dark enquiry-sec" id="enquiry">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label sec-label-dark"><i class="sec-num">09</i>START YOUR ENQUIRY</span>
+      <h2 class="sec-title sec-title-dark">Tell us about your project.</h2>
+    </div>
+    <div class="enq-grid">
+      <aside class="contact-card" id="contact">
+        <h3 class="cc-title">Architectural Design Lab</h3>
+        <address class="cc-addr">
+          Office 7,<br />Van Dyk Secured Office Park,<br />Boksburg,<br />Johannesburg East,<br />South Africa
+        </address>
+        <dl class="cc-list">
+          <div><dt>Cell</dt><dd><a href="tel:+27796188759">079 618 8759</a></dd></div>
+          <div><dt>Tel</dt><dd><a href="tel:+27110374433">011 037 4433</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:info@archdlab.co.za">info@archdlab.co.za</a></dd></div>
+        </dl>
+        <div class="cc-actions">
+          <a class="btn btn-primary btn-block" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">WhatsApp the Practice</a>
+          <a class="btn btn-ghost btn-block btn-ghost-dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Van%20Dyk%20Secured%20Office%20Park%2C%20Boksburg%2C%20Johannesburg%20East%2C%20South%20Africa" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </aside>
+
+      <!-- Wizard -->
+      <div class="wizard" id="wizard">
+        <div class="wz-progress" aria-hidden="true">
+          <div class="wz-progress-bar" id="wzBar"></div>
+        </div>
+        <p class="wz-step-ind" id="wzInd" aria-live="polite">Step 1 of 8</p>
+
+        <form id="enquiryForm" novalidate>
+          <!-- Step 1: Service -->
+          <div class="wz-step is-active" data-step="1">
+            <h3 class="wz-q">What do you need help with?</h3>
+            <div class="chip-field" role="radiogroup" aria-label="Service or area" id="fService">
+              <button type="button" class="chip" data-value="Architecture">Architecture</button>
+              <button type="button" class="chip" data-value="Interior Design">Interior Design</button>
+              <button type="button" class="chip" data-value="Construction">Construction</button>
+              <button type="button" class="chip" data-value="Project Appraisal">Project Appraisal</button>
+              <button type="button" class="chip" data-value="Concept Design">Concept Design</button>
+              <button type="button" class="chip" data-value="Design Development">Design Development</button>
+              <button type="button" class="chip" data-value="Documentation">Documentation</button>
+              <button type="button" class="chip" data-value="Tender Process">Tender Process</button>
+              <button type="button" class="chip" data-value="Construction Administration &amp; Supervision">Construction Administration &amp; Supervision</button>
+              <button type="button" class="chip" data-value="Landscaping">Landscaping</button>
+              <button type="button" class="chip" data-value="Not sure yet">I&rsquo;m not sure yet</button>
+            </div>
+            <p class="wz-hint" id="fServiceHint">Select one to continue.</p>
+          </div>
+
+          <!-- Step 2: Project type -->
+          <div class="wz-step" data-step="2">
+            <h3 class="wz-q">What type of project is it?</h3>
+            <div class="chip-field" role="radiogroup" aria-label="Project type" id="fType">
+              <button type="button" class="chip" data-value="Residential">Residential</button>
+              <button type="button" class="chip" data-value="Commercial">Commercial</button>
+              <button type="button" class="chip" data-value="Office">Office</button>
+              <button type="button" class="chip" data-value="Institutional">Institutional</button>
+              <button type="button" class="chip" data-value="Restaurant">Restaurant</button>
+              <button type="button" class="chip" data-value="Retail">Retail</button>
+              <button type="button" class="chip" data-value="Hotel / Resort / Lodge">Hotel / Resort / Lodge</button>
+              <button type="button" class="chip" data-value="Industrial">Industrial</button>
+              <button type="button" class="chip" data-value="Religious">Religious</button>
+              <button type="button" class="chip" data-value="Town House / Cluster">Town House / Cluster</button>
+              <button type="button" class="chip" data-value="Other">Other</button>
+            </div>
+            <p class="wz-hint" id="fTypeHint">Select one to continue.</p>
+          </div>
+
+          <!-- Step 3: Contact method -->
+          <div class="wz-step" data-step="3">
+            <h3 class="wz-q">How should we contact you?</h3>
+            <div class="chip-field" role="radiogroup" aria-label="Preferred contact method" id="fMethod">
+              <button type="button" class="chip" data-value="Phone">Phone</button>
+              <button type="button" class="chip" data-value="Email">Email</button>
+              <button type="button" class="chip" data-value="WhatsApp">WhatsApp</button>
+            </div>
+            <p class="wz-hint" id="fMethodHint">Select one to continue.</p>
+          </div>
+
+          <!-- Step 4: Date -->
+          <div class="wz-step" data-step="4">
+            <h3 class="wz-q">Preferred date for a discussion?</h3>
+            <div class="field">
+              <label for="fDate">Choose a date</label>
+              <input type="date" id="fDate" name="preferred_date" autocomplete="off" />
+              <p class="wz-hint" id="fDateHint">Please pick a date for the discussion.</p>
+            </div>
+          </div>
+
+          <!-- Step 5: Time -->
+          <div class="wz-step" data-step="5">
+            <h3 class="wz-q">Preferred time of day?</h3>
+            <div class="chip-field" role="radiogroup" aria-label="Preferred time" id="fTime">
+              <button type="button" class="chip" data-value="Morning (08:00–10:00)">Morning (08:00–10:00)</button>
+              <button type="button" class="chip" data-value="Late morning (10:00–12:00)">Late morning (10:00–12:00)</button>
+              <button type="button" class="chip" data-value="Midday (12:00–14:00)">Midday (12:00–14:00)</button>
+              <button type="button" class="chip" data-value="Afternoon (14:00–16:00)">Afternoon (14:00–16:00)</button>
+              <button type="button" class="chip" data-value="Late afternoon (16:00–17:30)">Late afternoon (16:00–17:30)</button>
+            </div>
+            <p class="wz-hint" id="fTimeHint">Select a preferred time to continue.</p>
+          </div>
+
+          <!-- Step 6: Details -->
+          <div class="wz-step" data-step="6">
+            <h3 class="wz-q">Your details.</h3>
+            <div class="field">
+              <label for="fName">Full name <span aria-hidden="true">*</span></label>
+              <input type="text" id="fName" name="name" autocomplete="name" required />
+              <p class="wz-hint" id="fNameHint">Please enter your full name.</p>
+            </div>
+            <div class="field">
+              <label for="fPhone">Phone number <span aria-hidden="true">*</span></label>
+              <input type="tel" id="fPhone" name="phone" autocomplete="tel" inputmode="tel" required />
+              <p class="wz-hint" id="fPhoneHint">Please enter a valid phone number.</p>
+            </div>
+            <div class="field">
+              <label for="fEmail">Email address <span aria-hidden="true">*</span></label>
+              <input type="email" id="fEmail" name="email" autocomplete="email" inputmode="email" required />
+              <p class="wz-hint" id="fEmailHint">Please enter a valid email address.</p>
+            </div>
+            <div class="field">
+              <label for="fMsg">Additional project information <span class="opt">(optional)</span></label>
+              <textarea id="fMsg" name="message" rows="4" placeholder="Site, scope, timeline — anything that helps us prepare."></textarea>
+            </div>
+          </div>
+
+          <!-- Step 7: Review -->
+          <div class="wz-step" data-step="7">
+            <h3 class="wz-q">Review your enquiry.</h3>
+            <dl class="review" id="review"></dl>
+          </div>
+
+          <!-- Step 8: Done -->
+          <div class="wz-step" data-step="8">
+            <div class="wz-done" id="wzDone">
+              <p class="wz-done-mark" aria-hidden="true">&#10003;</p>
+              <h3 class="wz-q">Thank you. Your enquiry has been received.</h3>
+              <p>The ARCHD LAB team will review your request and confirm the next steps shortly.</p>
+              <p class="wz-note">Submitting an enquiry does not automatically confirm an appointment.</p>
+              <a class="btn btn-primary" id="wzWaLink" href="https://wa.me/27796188759" target="_blank" rel="noopener">Continue on WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="wz-controls" id="wzControls">
+            <button type="button" class="btn btn-ghost btn-ghost-dark" id="wzBack">Back</button>
+            <button type="button" class="btn btn-primary" id="wzNext">Continue</button>
+          </div>
+        </form>
+
+        <p class="wz-err" id="wzErr" role="alert" hidden></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-label"><i class="sec-num">10</i>FAQ</span>
+      <h2 class="sec-title">Common questions.</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <article class="svc faq">
+        <button class="svc-head" aria-expanded="false" aria-controls="faq-p1" id="faq-b1">
+          <span class="svc-name">What does Architectural Design Lab do?</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="faq-p1" role="region" aria-labelledby="faq-b1">
+          <div class="svc-body"><p>ARCHD LAB is a young multi-disciplinary practice offering consultancy services in architecture, interior design and construction — independently or in combination, according to your requirements.</p></div>
+        </div>
+      </article>
+      <article class="svc faq">
+        <button class="svc-head" aria-expanded="false" aria-controls="faq-p2" id="faq-b2">
+          <span class="svc-name">What types of projects does the practice work with?</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="faq-p2" role="region" aria-labelledby="faq-b2">
+          <div class="svc-body"><p>Experience spans residential, commercial and industrial buildings, office blocks and space planning, institutional buildings, restaurants, retail, hotels, resorts and lodges, religious buildings, and town houses and clusters.</p></div>
+        </div>
+      </article>
+      <article class="svc faq">
+        <button class="svc-head" aria-expanded="false" aria-controls="faq-p3" id="faq-b3">
+          <span class="svc-name">Can I request only one service?</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="faq-p3" role="region" aria-labelledby="faq-b3">
+          <div class="svc-body"><p>Yes. Services can be provided independently or in combination according to client requirements.</p></div>
+        </div>
+      </article>
+      <article class="svc faq">
+        <button class="svc-head" aria-expanded="false" aria-controls="faq-p4" id="faq-b4">
+          <span class="svc-name">Who does Architectural Design Lab work with?</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="faq-p4" role="region" aria-labelledby="faq-b4">
+          <div class="svc-body"><p>Developers, corporations, private businesses and individuals.</p></div>
+        </div>
+      </article>
+      <article class="svc faq">
+        <button class="svc-head" aria-expanded="false" aria-controls="faq-p5" id="faq-b5">
+          <span class="svc-name">Where is Architectural Design Lab located?</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="faq-p5" role="region" aria-labelledby="faq-b5">
+          <div class="svc-body"><p>Office 7, Van Dyk Secured Office Park, Boksburg, Johannesburg East, South Africa.</p></div>
+        </div>
+      </article>
+      <article class="svc faq">
+        <button class="svc-head" aria-expanded="false" aria-controls="faq-p6" id="faq-b6">
+          <span class="svc-name">How do I start an enquiry?</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="faq-p6" role="region" aria-labelledby="faq-b6">
+          <div class="svc-body"><p>Use the enquiry form on this page, WhatsApp the practice, or reach us by phone or email.</p></div>
+        </div>
+      </article>
+      <article class="svc faq">
+        <button class="svc-head" aria-expanded="false" aria-controls="faq-p7" id="faq-b7">
+          <span class="svc-name">Does submitting an enquiry confirm an appointment?</span>
+          <span class="svc-arrow" aria-hidden="true"></span>
+        </button>
+        <div class="svc-panel" id="faq-p7" role="region" aria-labelledby="faq-b7">
+          <div class="svc-body"><p>No. Submitting an enquiry is a request. The team will review it and confirm the next steps with you.</p></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta" id="contact-cta">
+  <div class="container">
+    <span class="sec-label sec-label-dark"><i class="sec-num">&#8594;</i>NEXT STEP</span>
+    <h2 class="cta-title">Let&rsquo;s talk about <em>your</em> project.</h2>
+    <p class="cta-sub">Whether it&rsquo;s architecture, interior design or construction — from a first concept to a full build — the conversation starts with an enquiry.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary btn-lg" href="#enquiry">Start an Enquiry</a>
+      <a class="btn btn-ghost btn-ghost-dark btn-lg" href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20would%20like%20to%20discuss%20my%20project." target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-foot">
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <p class="foot-wordmark">ARCHD<em>LAB</em></p>
+      <p class="foot-name">Architectural Design Lab</p>
+      <p class="foot-tag">Architecture · Interior Design · Construction</p>
+    </div>
+    <nav class="foot-col" aria-label="Practice">
+      <h3 class="mini-label">PRACTICE</h3>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#philosophy">Philosophy</a>
+    </nav>
+    <nav class="foot-col" aria-label="Site">
+      <h3 class="mini-label">SITE</h3>
+      <a href="#enquiry">Start an Enquiry</a>
+      <a href="#contact">Contact</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="foot-col foot-contact">
+      <h3 class="mini-label">CONTACT</h3>
+      <a href="tel:+27796188759">Cell 079 618 8759</a>
+      <a href="tel:+27110374433">Tel 011 037 4433</a>
+      <a href="mailto:info@archdlab.co.za">info@archdlab.co.za</a>
+      <a href="https://wa.me/27796188759?text=Hi%2C%20I%20found%20Architectural%20Design%20Lab%20through%20your%20website%20and%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Van%20Dyk%20Secured%20Office%20Park%2C%20Boksburg%2C%20Johannesburg%20East%2C%20South%20Africa" target="_blank" rel="noopener">Office location &amp; directions</a>
+      <p class="foot-addr">Office 7, Van Dyk Secured Office Park, Boksburg, Johannesburg East, South Africa</p>
+    </div>
+  </div>
+  <div class="container foot-bar">
+    <p>&copy; 2026 Architectural Design Lab. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
